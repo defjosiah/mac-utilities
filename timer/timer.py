@@ -3,7 +3,7 @@ import sys
 import os
 
 def start_timer(minutes):
-    wd = os.getcwd()
+    wd = os.path.dirname(os.path.realpath(__file__))
     for x in xrange(minutes):
         time.sleep(60)
         print x+1
